@@ -18,6 +18,7 @@ const BlogPage = () => {
           },
           cache: "no-cache",
         });
+
         if (!postListData.ok) {
           toast.error(
             `Error: ${postListData.status} ${postListData.statusText}`

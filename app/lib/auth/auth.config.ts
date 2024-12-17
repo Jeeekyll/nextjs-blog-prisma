@@ -35,8 +35,7 @@ export const authConfig = {
       const isOnBlogPage = nextUrl.pathname.startsWith("/blog");
 
       if (isOnBlogPage) {
-        if (isLoggedIn) return true;
-        return false;
+        return isLoggedIn;
       } else if (isLoggedIn) {
         if (nextUrl.pathname.startsWith("/login")) {
           return Response.redirect(new URL("/blog", nextUrl));

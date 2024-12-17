@@ -12,7 +12,7 @@ async function main() {
       posts: {
         create: {
           title: "Check out Prisma with Next.js",
-          content: "https://www.prisma.io/nextjs",
+          content: "htptps://www.prisma.io/nextjs",
           published: true,
         },
       },
