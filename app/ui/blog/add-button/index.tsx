@@ -22,7 +22,7 @@ const AddButton = () => {
   const onSubmitHandler: SubmitHandler<PostBlogSchema> = async (values) => {
     try {
       toast.promise(
-        fetch(process.env.API_URL + "/api/blog", {
+        fetch("/api/blog", {
           method: "POST",
           body: JSON.stringify(values),
           headers: {
